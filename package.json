@@ -9,8 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:dduskim/grunt-jsversion.git"
   },
+  "bugs": {
+    "url": "https://github.com/dduskim/grunt-jsversion/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/eastkiki/grunt-concat/blob/master/LICENSE-MIT"
+    }
+  ],
   "main": "grunt.js",
   "bin": "bin/grunt-jsversion",
   "engines": {
@@ -26,6 +35,10 @@
     "grunt": "~0.3.17"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "version",
+    "versioning",
+    "jsversion"
+    
   ]
 }
