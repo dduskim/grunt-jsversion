@@ -15,7 +15,21 @@ grunt.loadNpmTasks('grunt-jsversion');
 [getting_started]: https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md
 
 ## Documentation
-_(Coming soon)_
+```javascript
+grunt.initConfig({
+    // ... other configs
+
+    jsversion : {
+        dist : {
+            namespace   : 'global',             // (optional) window.global.{package.name}.version = {package.version};
+            src         : 'dist/test.js',       // (required) source file
+            dest        : 'dist/test.v.js'      // (optional) destination file (default : overrite src)
+        }  
+    }
+
+    // ... other configs
+});
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
