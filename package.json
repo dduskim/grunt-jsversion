@@ -1,0 +1,31 @@
+{
+  "name": "grunt-jsversion",
+  "description": "Add version info",
+  "version": "1.0.0",
+  "homepage": "",
+  "author": {
+    "name": "Kim Du-hyeong",
+    "email": "dduskim@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "grunt.js",
+  "bin": "bin/grunt-jsversion",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt": "~0.3.17"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
