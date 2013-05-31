@@ -54,7 +54,7 @@ module.exports = function(grunt) {
           '    if(' + namespaceStr + ' !== "undefined") {\n' +
           '        ' + namespaceStr + '.version = "' + packageJson.version + '";\n' +
           '    }\n' +
-          '}(window));';
+          '}(window));\n\n';
 
       var srcFile = grunt.file.read(this.file.src);
       if(srcFile === 'undefined') {
