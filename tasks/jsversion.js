@@ -56,24 +56,14 @@ module.exports = function(grunt) {
           '    }\n' +
           '}(window));\n\n';
 
-      var srcFile = grunt.file.read(this.file.src);
+      var srcFile = grunt.file.read(this.data.src);
       if(srcFile === 'undefined') {
           return false;
       }
       var destFile = [srcFile, versionScript].join('\n');
-      var dest = this.file.dest || this.file.src;
+      var dest = this.data.dest || this.data.src;
       
       grunt.file.write(dest, destFile);
       grunt.log.writeln('Version information was added to ' + dest);
   });
-
-
-  // ==========================================================================
-  // HELPERS
-  // ==========================================================================
-
-  grunt.registerHelper('jsversion', function() {
-    return 'jsversion!!!';
-  });
-
 };

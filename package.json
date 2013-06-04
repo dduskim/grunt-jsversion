@@ -1,7 +1,7 @@
 {
   "name": "grunt-jsversion",
   "description": "Add package version information to file",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "",
   "author": {
     "name": "Kim Du-hyeong",
@@ -23,16 +23,22 @@
   "main": "grunt.js",
   "bin": "bin/grunt-jsversion",
   "engines": {
-    "node": "*"
+    "node": ">= 0.8"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-nodeunit": "*",
+    "grunt-contrib-watch": "*"
   },
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-nodeunit": "*",
+    "grunt-contrib-watch": "*"
   },
   "keywords": [
     "gruntplugin",
