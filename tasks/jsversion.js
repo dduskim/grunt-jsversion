@@ -51,7 +51,7 @@ module.exports = function(grunt) {
           '    "use strict";\n\n' + 
           '    /* package version info */\n' +
           condition.join('\n') + '\n' +
-          '    if(' + namespaceStr + ' !== "undefined") {\n' +
+          '    if(typeof ' + namespaceStr + ' !== "undefined") {\n' +
           '        ' + namespaceStr + '.version = "' + packageJson.version + '";\n' +
           '    }\n' +
           '}(window));\n\n';
